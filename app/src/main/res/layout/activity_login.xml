@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundFacebook"
+    android:theme="@style/LoginActivityTheme"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="98dp"
+        app:srcCompat="@drawable/ic_facebook_logo" />
+
+
+
+    <TextView
+        android:id="@+id/tvAesthetic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignTop="@id/ivLogo"
+        android:layout_marginTop="65dp"
+
+        android:layout_centerHorizontal="true"
+
+        android:alpha="0.6"
+        android:text="•" />
+
+    <TextView
+        android:id="@+id/tvLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignTop="@+id/tvAesthetic"
+
+        android:layout_alignEnd="@id/ivLogo"
+        android:layout_marginEnd="32dp"
+
+
+        android:alpha="0.6"
+        android:text="English" />
+
+
+    <EditText
+        android:id="@+id/etEmail"
+        style="@style/LoginActivityEditTextTheme"
+
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+
+
+        android:layout_width="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_centerInParent="true"
+
+
+        android:layout_alignBottom="@id/etPassword"
+
+        android:layout_marginBottom="50dp"
+
+        android:ems="10"
+        android:hint="Email or Phone" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        style="@style/LoginActivityEditTextTheme"
+
+        android:layout_width="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_centerInParent="true"
+        android:paddingTop="100dp"
+
+
+
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+         />
+
+    <Button
+        android:id="@+id/btnChangeLanguage"
+        style="@style/TextButtonTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvAesthetic"
+
+        android:alpha="0.8"
+        android:layout_alignStart="@id/tvAesthetic"
+        android:layout_marginStart="10dp"
+        android:text="@string/change" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="30dp"
+
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+
+        android:alpha="0.4"
+        android:background="@color/colorForegroundFacebook"
+        android:text="@string/log_in"
+        android:textColor="#fff" />
+
+
+
+    <Button
+        android:id="@+id/btnSignUp"
+        style="@style/TextButtonTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/btnForgotPassword"
+        android:layout_marginBottom="10dp"
+        android:text="@string/sign_up_for_facebook" />
+
+    <Button
+        android:id="@+id/btnForgotPassword"
+        style="@style/TextButtonTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="40dp"
+
+        android:layout_alignParentBottom="true"
+
+        android:text="Forgot Password?" />
+
+    <ImageButton
+        android:id="@+id/ibHelp"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+
+        android:alpha="0.9"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/btnForgotPassword"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="-5dp"
+
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_question_mark" />
+
+
+</RelativeLayout>
