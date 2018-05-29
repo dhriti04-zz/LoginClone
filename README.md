@@ -5,6 +5,7 @@ Recreating a chosen login screen as closely as possible while using android view
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
+</br>
 ![alt tag](./clone.gif)
 
 
