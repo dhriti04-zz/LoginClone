@@ -2,7 +2,7 @@
     <string name="app_name">Lab1-CloningALoginScreens</string>
 
 
-    <string name="log_in">Log in</string>
+    <string name="button_log_in">Log in</string>
     <string name="sign_up_for_facebook">Sign Up for Facebook</string>
     <string name="change">Change</string>
 </resources>

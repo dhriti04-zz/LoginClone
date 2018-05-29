@@ -1,5 +1,6 @@
 package com.codepath.tejen.lab1_cloningaloginscreens;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
@@ -49,10 +50,21 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(isFormFilled())
-                    Toast.makeText(getApplicationContext(), "sorry not sorry", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "You're logged in :)", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(LoginActivity.this, stream.class);
+                startActivity(i);
+
             }
         });
     }
+
+//    public void sendLogin(View view){
+//
+//        if(isFormFilled()) {
+//
+//        }
+//
+//    }
 
     private boolean isFormFilled() {
         return etEmail.getText().toString().length() > 0 && etPassword.getText().toString().length() > 0;

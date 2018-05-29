@@ -111,10 +111,10 @@
 
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
-
+        android:onClick="sendLogin"
         android:alpha="0.4"
         android:background="@color/colorForegroundFacebook"
-        android:text="@string/log_in"
+        android:text="@string/button_log_in"
         android:textColor="#fff" />
 
 
