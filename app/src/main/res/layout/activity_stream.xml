@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".stream">
+    tools:context=".stream"
+    android:weightSum="3"
+    android:background= "@color/colorTextPrimary">
 
     <ImageView
         android:id="@+id/cover_photo"
@@ -17,28 +19,93 @@
         app:srcCompat="@drawable/cover_photo" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="152dp"
-        android:layout_height="154dp"
+        android:id="@+id/prof_pic"
+        android:layout_width="147dp"
+        android:layout_height="145dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="113dp"
+        android:layout_marginTop="118dp"
         android:background="@android:color/background_light"
         android:padding="1dp"
+        android:weightSum="1"
         app:srcCompat="@drawable/prof_pic" />
 
     <TextView
         android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="256dp"
+        android:layout_below="@id/prof_pic"
+        android:layout_centerInParent="true"
         android:text="Dhriti Chawla"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textSize="29dp"
-        android:letterSpacing="24dp"
-        />
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <ImageView
+        android:id="@+id/icons"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/tvName"
+        android:layout_marginBottom="192dp"
+        android:layout_marginStart="0dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_icons" />
+
+    <ImageView
+        android:id="@+id/small_icons"
+        android:layout_width="29dp"
+        android:layout_height="123dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="52dp"
+        android:layout_marginStart="14dp"
+        app:srcCompat="@drawable/small_icons" />
+
+    <TextView
+        android:id="@+id/tvWork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="149dp"
+        android:layout_toEndOf="@+id/small_icons"
+        android:text="Interning with CodePath" />
+
+    <TextView
+        android:id="@+id/tvHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="110dp"
+        android:layout_toEndOf="@+id/small_icons"
+        android:text="Lives in West Lafayette, Indiana" />
+
+    <TextView
+        android:id="@+id/tvSchool"
+        android:layout_width="206dp"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:layout_toEndOf="@+id/small_icons"
+        android:text="Studies Computer Sc. at Purdue University" />
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/image1" />
+
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_width="185dp"
+        android:layout_height="31dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/image2" />
 
 
 </RelativeLayout>
